@@ -32,7 +32,6 @@ import org.bukkit.Bukkit;
 import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.json.JSONArray;
-import org.mcstats.MetricsLite;
 
 import java.io.*;
 
@@ -85,14 +84,6 @@ public class DomainTeleport extends JavaPlugin {
 				getLogger().info("Loaded " + teleportManager.size() + " teleport values");
 			}
 		}, 20);
-
-		try {
-			MetricsLite metrics = new MetricsLite(this);
-			if (metrics.start()) {
-				getLogger().info("Metrics started");
-			}
-		} catch (Exception e) {
-		}
 	}
 
 	@Override

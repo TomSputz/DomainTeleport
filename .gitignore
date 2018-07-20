@@ -1,0 +1,9 @@
+Build output
+target/
+
+Stuff vscode made?
+.settings/
+.vscode/
+.classpath
+.project
+dependency-reduced-pom.xml
